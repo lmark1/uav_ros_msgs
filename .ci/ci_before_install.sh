@@ -10,6 +10,9 @@ echo "Starting install"
 # get the current commit SHA
 SHA=`git rev-parse HEAD`
 
+# get the current package name
+PACKAGE_NAME=${PWD##*/}
+
 sudo apt-get -y install git
 
 echo "clone uav_ros_stack"
